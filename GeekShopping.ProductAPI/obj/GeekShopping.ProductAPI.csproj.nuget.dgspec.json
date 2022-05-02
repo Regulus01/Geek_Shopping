@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "G:\\My Drive\\Cursos\\Curso Microserviços\\Erudio-Microservices-Dotnet6\\Scaffold\\FirstMicroService\\GeekShooping\\GeekShopping.ProductAPI\\GeekShopping.ProductAPI.csproj": {}
+    "G:\\My Drive\\Cursos\\Curso Microserviços\\FirstMicroService\\GeekShooping\\GeekShopping.ProductAPI\\GeekShopping.ProductAPI.csproj": {}
   },
   "projects": {
-    "G:\\My Drive\\Cursos\\Curso Microserviços\\Erudio-Microservices-Dotnet6\\Scaffold\\FirstMicroService\\GeekShooping\\GeekShopping.ProductAPI\\GeekShopping.ProductAPI.csproj": {
+    "G:\\My Drive\\Cursos\\Curso Microserviços\\FirstMicroService\\GeekShooping\\GeekShopping.ProductAPI\\GeekShopping.ProductAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\My Drive\\Cursos\\Curso Microserviços\\Erudio-Microservices-Dotnet6\\Scaffold\\FirstMicroService\\GeekShooping\\GeekShopping.ProductAPI\\GeekShopping.ProductAPI.csproj",
+        "projectUniqueName": "G:\\My Drive\\Cursos\\Curso Microserviços\\FirstMicroService\\GeekShooping\\GeekShopping.ProductAPI\\GeekShopping.ProductAPI.csproj",
         "projectName": "GeekShopping.ProductAPI",
-        "projectPath": "G:\\My Drive\\Cursos\\Curso Microserviços\\Erudio-Microservices-Dotnet6\\Scaffold\\FirstMicroService\\GeekShooping\\GeekShopping.ProductAPI\\GeekShopping.ProductAPI.csproj",
+        "projectPath": "G:\\My Drive\\Cursos\\Curso Microserviços\\FirstMicroService\\GeekShooping\\GeekShopping.ProductAPI\\GeekShopping.ProductAPI.csproj",
         "packagesPath": "C:\\Users\\jsous\\.nuget\\packages\\",
-        "outputPath": "G:\\My Drive\\Cursos\\Curso Microserviços\\Erudio-Microservices-Dotnet6\\Scaffold\\FirstMicroService\\GeekShooping\\GeekShopping.ProductAPI\\obj\\",
+        "outputPath": "G:\\My Drive\\Cursos\\Curso Microserviços\\FirstMicroService\\GeekShooping\\GeekShopping.ProductAPI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "kOgI1lTmQkYNV4AkFQncuPopybup7XLE8QC4JCADj1oLZ5vCoO1SHEl5ZsUJE/uYU0QSi5MwBbKv8Q3uK8NQCQ==",
+  "dgSpecHash": "u3gHlnPTGpot4eHIBkYg2L9aNoyNbGidxIhK5v6QtWDV9x0qVrf47lOa84rI1SNqNUFFqHE4yiAP/dK16kp9CA==",
   "success": true,
-  "projectFilePath": "G:\\My Drive\\Cursos\\Curso Microserviços\\Erudio-Microservices-Dotnet6\\Scaffold\\FirstMicroService\\GeekShooping\\GeekShopping.Web\\GeekShopping.Web.csproj",
+  "projectFilePath": "G:\\My Drive\\Cursos\\Curso Microserviços\\FirstMicroService\\GeekShooping\\GeekShopping.Web\\GeekShopping.Web.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
