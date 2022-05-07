@@ -16,7 +16,7 @@ namespace GeekShopping.Web.Utils
             if (!response.IsSuccessStatusCode)
             {
                 throw new ApplicationException
-                    ($"Something went wrong calling the API" +
+                    ($"Something went wrong calling the API " +
                      $"{response.ReasonPhrase}");
             }
 

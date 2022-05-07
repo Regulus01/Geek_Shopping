@@ -12,9 +12,10 @@ namespace GeekShopping.ProductAPI.Controllers
 
         public ProductController(IProductRepository repository)
         {
-            _repository = repository ?? throw new 
-                ArgumentException(nameof(repository));
+            _repository = repository ?? throw new
+            ArgumentException(nameof(repository));
         }
+
         [HttpGet]
         public async Task<ActionResult<IEnumerable<ProductVO>>> FindByAll()
         {
@@ -25,14 +26,14 @@ namespace GeekShopping.ProductAPI.Controllers
         public async Task<ActionResult<ProductVO>> FindById(long id)
         {
             var product = await _repository.FindById(id);
-            if(product == null) return NotFound();
+            if (product == null) return NotFound();
             return Ok(product);
         }
 
         [HttpPost]
-        public async Task<ActionResult<ProductVO>> Create(ProductVO vo)
+        public async Task<ActionResult<ProductVO>> Create([FromBody] ProductVO vo)
         {
-           
+
             if (vo == null) return BadRequest();
 
             var product = await _repository.Create(vo);
@@ -56,7 +57,7 @@ namespace GeekShopping.ProductAPI.Controllers
         {
 
             var status = await _repository.Delete(id);
-            if(!status) return BadRequest();    
+            if (!status) return BadRequest();
             return Ok(status);
         }
 

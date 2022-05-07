@@ -23,7 +23,14 @@ namespace GeekShopping.Web.Services
         public async Task<ProductModel> FindProductById(long id)
         {
             var response = await _client.GetAsync($"{BasePath}/{id}");
-            return await response.ReadContentAs<ProductModel>();
+            if (response.IsSuccessStatusCode)
+            {
+                return await response.ReadContentAs<ProductModel>();
+            }
+            else
+            {
+                throw new Exception("Somenthing went wrong when calling API");
+            }
         }
 
         public async Task<ProductModel> CreateProduct(ProductModel model)
