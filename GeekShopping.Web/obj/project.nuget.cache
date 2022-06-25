@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "u3gHlnPTGpot4eHIBkYg2L9aNoyNbGidxIhK5v6QtWDV9x0qVrf47lOa84rI1SNqNUFFqHE4yiAP/dK16kp9CA==",
+  "dgSpecHash": "JqlyjKmYYkF9epy+OGesLSeNpo/um6hgAFTs+rwfEXPeeABjUq+z129BZ0aUy1fogDE9ws7RT74QU/kBZDr+Rg==",
   "success": true,
-  "projectFilePath": "G:\\My Drive\\Cursos\\Curso Microserviços\\FirstMicroService\\GeekShooping\\GeekShopping.Web\\GeekShopping.Web.csproj",
+  "projectFilePath": "G:\\My Drive\\Cursos\\CursoMicroservicesMySql\\Geek_Shopping\\GeekShopping.Web\\GeekShopping.Web.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
