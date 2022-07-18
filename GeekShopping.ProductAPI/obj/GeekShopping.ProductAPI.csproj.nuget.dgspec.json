@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "G:\\My Drive\\Cursos\\CursoMicroservicesMySql\\Geek_Shopping\\GeekShopping.ProductAPI\\GeekShopping.ProductAPI.csproj": {}
+    "G:\\My Drive\\Cursos\\Curso Microserviços\\FirstMicroService\\GeekShooping\\Geek_Shopping\\GeekShopping.ProductAPI\\GeekShopping.ProductAPI.csproj": {}
   },
   "projects": {
-    "G:\\My Drive\\Cursos\\CursoMicroservicesMySql\\Geek_Shopping\\GeekShopping.IdentityServer\\GeekShopping.IdentityServer.csproj": {
+    "G:\\My Drive\\Cursos\\Curso Microserviços\\FirstMicroService\\GeekShooping\\Geek_Shopping\\GeekShopping.IdentityServer\\GeekShopping.IdentityServer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\My Drive\\Cursos\\CursoMicroservicesMySql\\Geek_Shopping\\GeekShopping.IdentityServer\\GeekShopping.IdentityServer.csproj",
+        "projectUniqueName": "G:\\My Drive\\Cursos\\Curso Microserviços\\FirstMicroService\\GeekShooping\\Geek_Shopping\\GeekShopping.IdentityServer\\GeekShopping.IdentityServer.csproj",
         "projectName": "GeekShopping.IdentityServer",
-        "projectPath": "G:\\My Drive\\Cursos\\CursoMicroservicesMySql\\Geek_Shopping\\GeekShopping.IdentityServer\\GeekShopping.IdentityServer.csproj",
+        "projectPath": "G:\\My Drive\\Cursos\\Curso Microserviços\\FirstMicroService\\GeekShooping\\Geek_Shopping\\GeekShopping.IdentityServer\\GeekShopping.IdentityServer.csproj",
         "packagesPath": "C:\\Users\\jsous\\.nuget\\packages\\",
-        "outputPath": "G:\\My Drive\\Cursos\\CursoMicroservicesMySql\\Geek_Shopping\\GeekShopping.IdentityServer\\obj\\",
+        "outputPath": "G:\\My Drive\\Cursos\\Curso Microserviços\\FirstMicroService\\GeekShooping\\Geek_Shopping\\GeekShopping.IdentityServer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\jsous\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -85,14 +85,14 @@
         }
       }
     },
-    "G:\\My Drive\\Cursos\\CursoMicroservicesMySql\\Geek_Shopping\\GeekShopping.ProductAPI\\GeekShopping.ProductAPI.csproj": {
+    "G:\\My Drive\\Cursos\\Curso Microserviços\\FirstMicroService\\GeekShooping\\Geek_Shopping\\GeekShopping.ProductAPI\\GeekShopping.ProductAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\My Drive\\Cursos\\CursoMicroservicesMySql\\Geek_Shopping\\GeekShopping.ProductAPI\\GeekShopping.ProductAPI.csproj",
+        "projectUniqueName": "G:\\My Drive\\Cursos\\Curso Microserviços\\FirstMicroService\\GeekShooping\\Geek_Shopping\\GeekShopping.ProductAPI\\GeekShopping.ProductAPI.csproj",
         "projectName": "GeekShopping.ProductAPI",
-        "projectPath": "G:\\My Drive\\Cursos\\CursoMicroservicesMySql\\Geek_Shopping\\GeekShopping.ProductAPI\\GeekShopping.ProductAPI.csproj",
+        "projectPath": "G:\\My Drive\\Cursos\\Curso Microserviços\\FirstMicroService\\GeekShooping\\Geek_Shopping\\GeekShopping.ProductAPI\\GeekShopping.ProductAPI.csproj",
         "packagesPath": "C:\\Users\\jsous\\.nuget\\packages\\",
-        "outputPath": "G:\\My Drive\\Cursos\\CursoMicroservicesMySql\\Geek_Shopping\\GeekShopping.ProductAPI\\obj\\",
+        "outputPath": "G:\\My Drive\\Cursos\\Curso Microserviços\\FirstMicroService\\GeekShooping\\Geek_Shopping\\GeekShopping.ProductAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\jsous\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -109,8 +109,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "G:\\My Drive\\Cursos\\CursoMicroservicesMySql\\Geek_Shopping\\GeekShopping.IdentityServer\\GeekShopping.IdentityServer.csproj": {
-                "projectPath": "G:\\My Drive\\Cursos\\CursoMicroservicesMySql\\Geek_Shopping\\GeekShopping.IdentityServer\\GeekShopping.IdentityServer.csproj"
+              "G:\\My Drive\\Cursos\\Curso Microserviços\\FirstMicroService\\GeekShooping\\Geek_Shopping\\GeekShopping.IdentityServer\\GeekShopping.IdentityServer.csproj": {
+                "projectPath": "G:\\My Drive\\Cursos\\Curso Microserviços\\FirstMicroService\\GeekShooping\\Geek_Shopping\\GeekShopping.IdentityServer\\GeekShopping.IdentityServer.csproj"
               }
             }
           }

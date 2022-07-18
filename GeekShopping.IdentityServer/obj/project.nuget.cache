@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "oerPonhx8X7eU7eao70ajrh8wj5TU49yASeANhM3L5LS1mH+KT07SdnhyVtxn9jL410EuT+eCOCjvur5EueB0g==",
+  "dgSpecHash": "lXqM1HBKkqAjseoem02aGVNrysEYUm/hXN5QGoAEZaFCHeaGGlDt2jJCQQr1JCDBDeRisBDFqqvly03XX/lHiw==",
   "success": true,
-  "projectFilePath": "G:\\My Drive\\Cursos\\CursoMicroservicesMySql\\Geek_Shopping\\GeekShopping.IdentityServer\\GeekShopping.IdentityServer.csproj",
+  "projectFilePath": "G:\\My Drive\\Cursos\\Curso Microserviços\\FirstMicroService\\GeekShooping\\Geek_Shopping\\GeekShopping.IdentityServer\\GeekShopping.IdentityServer.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jsous\\.nuget\\packages\\duende.identityserver\\6.0.4\\duende.identityserver.6.0.4.nupkg.sha512",
     "C:\\Users\\jsous\\.nuget\\packages\\duende.identityserver.aspnetidentity\\6.0.4\\duende.identityserver.aspnetidentity.6.0.4.nupkg.sha512",

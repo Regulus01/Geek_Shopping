@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "G:\\My Drive\\Cursos\\CursoMicroservicesMySql\\Geek_Shopping\\GeekShopping.Web\\GeekShopping.Web.csproj",
+      "projectUniqueName": "G:\\My Drive\\Cursos\\Curso Microserviços\\FirstMicroService\\GeekShooping\\Geek_Shopping\\GeekShopping.Web\\GeekShopping.Web.csproj",
       "projectName": "GeekShopping.Web",
-      "projectPath": "G:\\My Drive\\Cursos\\CursoMicroservicesMySql\\Geek_Shopping\\GeekShopping.Web\\GeekShopping.Web.csproj",
+      "projectPath": "G:\\My Drive\\Cursos\\Curso Microserviços\\FirstMicroService\\GeekShooping\\Geek_Shopping\\GeekShopping.Web\\GeekShopping.Web.csproj",
       "packagesPath": "C:\\Users\\jsous\\.nuget\\packages\\",
-      "outputPath": "G:\\My Drive\\Cursos\\CursoMicroservicesMySql\\Geek_Shopping\\GeekShopping.Web\\obj\\",
+      "outputPath": "G:\\My Drive\\Cursos\\Curso Microserviços\\FirstMicroService\\GeekShooping\\Geek_Shopping\\GeekShopping.Web\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\jsous\\AppData\\Roaming\\NuGet\\NuGet.Config",
