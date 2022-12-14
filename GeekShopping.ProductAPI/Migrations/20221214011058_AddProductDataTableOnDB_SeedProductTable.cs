@@ -1,13 +1,31 @@
 ﻿using Microsoft.EntityFrameworkCore.Migrations;
+using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 #nullable disable
 
 namespace GeekShopping.ProductAPI.Migrations
 {
-    public partial class SeedProductDataTable : Migration
+    public partial class AddProductDataTableOnDB_SeedProductTable : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
+            migrationBuilder.CreateTable(
+                name: "product",
+                columns: table => new
+                {
+                    id = table.Column<long>(type: "bigint", nullable: false)
+                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
+                    name = table.Column<string>(type: "character varying(150)", maxLength: 150, nullable: false),
+                    price = table.Column<decimal>(type: "numeric", nullable: false),
+                    description = table.Column<string>(type: "character varying(500)", maxLength: 500, nullable: true),
+                    category_name = table.Column<string>(type: "character varying(50)", maxLength: 50, nullable: true),
+                    image_url = table.Column<string>(type: "character varying(300)", maxLength: 300, nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_product", x => x.id);
+                });
+
             migrationBuilder.InsertData(
                 table: "product",
                 columns: new[] { "id", "category_name", "description", "image_url", "name", "price" },
@@ -30,65 +48,8 @@ namespace GeekShopping.ProductAPI.Migrations
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.DeleteData(
-                table: "product",
-                keyColumn: "id",
-                keyValue: 2L);
-
-            migrationBuilder.DeleteData(
-                table: "product",
-                keyColumn: "id",
-                keyValue: 3L);
-
-            migrationBuilder.DeleteData(
-                table: "product",
-                keyColumn: "id",
-                keyValue: 4L);
-
-            migrationBuilder.DeleteData(
-                table: "product",
-                keyColumn: "id",
-                keyValue: 5L);
-
-            migrationBuilder.DeleteData(
-                table: "product",
-                keyColumn: "id",
-                keyValue: 6L);
-
-            migrationBuilder.DeleteData(
-                table: "product",
-                keyColumn: "id",
-                keyValue: 7L);
-
-            migrationBuilder.DeleteData(
-                table: "product",
-                keyColumn: "id",
-                keyValue: 8L);
-
-            migrationBuilder.DeleteData(
-                table: "product",
-                keyColumn: "id",
-                keyValue: 9L);
-
-            migrationBuilder.DeleteData(
-                table: "product",
-                keyColumn: "id",
-                keyValue: 10L);
-
-            migrationBuilder.DeleteData(
-                table: "product",
-                keyColumn: "id",
-                keyValue: 11L);
-
-            migrationBuilder.DeleteData(
-                table: "product",
-                keyColumn: "id",
-                keyValue: 12L);
-
-            migrationBuilder.DeleteData(
-                table: "product",
-                keyColumn: "id",
-                keyValue: 13L);
+            migrationBuilder.DropTable(
+                name: "product");
         }
     }
 }

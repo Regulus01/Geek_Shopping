@@ -1,19 +1,30 @@
+using System.Data.Common;
 using GeekShopping.IdentityServer.Configuration;
 using GeekShopping.IdentityServer.Initializer;
 using GeekShopping.IdentityServer.Model;
 using GeekShopping.IdentityServer.Model.Context;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Npgsql;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
-var connection = builder.Configuration["MySqlConnection:MySQlConnectionString"];
-builder.Services.AddDbContext<MySQLContext>(options => options.UseMySql
-(connection, new MySqlServerVersion(new Version(8, 0))));
+// Conexao com banco
+var connectionString = builder.Configuration.GetConnectionString("App");
+DbConnection dbConnection = new NpgsqlConnection(connectionString);
+
+builder.Services.AddDbContext<ApplicationDbContext>(options =>
+{
+    options.UseNpgsql(dbConnection, assembly =>
+        assembly.MigrationsAssembly(typeof(ApplicationDbContext).Assembly.FullName));
+});
+
+
+
 builder.Services.AddIdentity<ApplicationUser, IdentityRole>()
-    .AddEntityFrameworkStores<MySQLContext>()
+    .AddEntityFrameworkStores<ApplicationDbContext>()
     .AddDefaultTokenProviders();
 
 var build = builder.Services.AddIdentityServer(options =>

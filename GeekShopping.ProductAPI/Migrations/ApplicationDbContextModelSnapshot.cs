@@ -2,23 +2,24 @@
 using GeekShopping.ProductAPI.Model.Context;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
-using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
+using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 #nullable disable
 
 namespace GeekShopping.ProductAPI.Migrations
 {
-    [DbContext(typeof(MySQLContext))]
-    [Migration("20220501184928_SeedProductDataTable")]
-    partial class SeedProductDataTable
+    [DbContext(typeof(ApplicationDbContext))]
+    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
     {
-        protected override void BuildTargetModel(ModelBuilder modelBuilder)
+        protected override void BuildModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "6.0.4")
-                .HasAnnotation("Relational:MaxIdentifierLength", 64);
+                .HasAnnotation("ProductVersion", "6.0.7")
+                .HasAnnotation("Relational:MaxIdentifierLength", 63);
+
+            NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
 
             modelBuilder.Entity("GeekShopping.ProductAPI.Model.Product", b =>
                 {
@@ -27,29 +28,31 @@ namespace GeekShopping.ProductAPI.Migrations
                         .HasColumnType("bigint")
                         .HasColumnName("id");
 
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<long>("Id"));
+
                     b.Property<string>("CategoryName")
                         .HasMaxLength(50)
-                        .HasColumnType("varchar(50)")
+                        .HasColumnType("character varying(50)")
                         .HasColumnName("category_name");
 
                     b.Property<string>("Description")
                         .HasMaxLength(500)
-                        .HasColumnType("varchar(500)")
+                        .HasColumnType("character varying(500)")
                         .HasColumnName("description");
 
                     b.Property<string>("ImageURL")
                         .HasMaxLength(300)
-                        .HasColumnType("varchar(300)")
+                        .HasColumnType("character varying(300)")
                         .HasColumnName("image_url");
 
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasMaxLength(150)
-                        .HasColumnType("varchar(150)")
+                        .HasColumnType("character varying(150)")
                         .HasColumnName("name");
 
                     b.Property<decimal>("Price")
-                        .HasColumnType("decimal(65,30)")
+                        .HasColumnType("numeric")
                         .HasColumnName("price");
 
                     b.HasKey("Id");

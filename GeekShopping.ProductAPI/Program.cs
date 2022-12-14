@@ -1,3 +1,4 @@
+using System.Data.Common;
 using AutoMapper;
 using GeekShopping.ProductAPI.Config;
 using GeekShopping.ProductAPI.Model.Context;
@@ -5,13 +6,19 @@ using GeekShopping.ProductAPI.Repository;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
+using Npgsql;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-var connection = builder.Configuration["MySqlConnection:MySQlConnectionString"];
-builder.Services.AddDbContext<MySQLContext>(options => options.UseMySql
-(connection, new MySqlServerVersion(new Version(8, 0))));
+// Conexao com banco
+var connectionString = builder.Configuration.GetConnectionString("App");
+DbConnection dbConnection = new NpgsqlConnection(connectionString);
+
+builder.Services.AddDbContext<ApplicationDbContext>(options =>
+{
+    options.UseNpgsql(dbConnection, assembly =>
+        assembly.MigrationsAssembly(typeof(ApplicationDbContext).Assembly.FullName));
+});
 
 IMapper mapper = MappingConfig.RegisterMaps().CreateMapper();
 builder.Services.AddSingleton(mapper);
