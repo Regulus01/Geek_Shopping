@@ -1,9 +1,0 @@
-
-h
-8GeekShopping.ProductAPI/Repository/IProductRepository.cs,1\4\14a2b33833f513790d15acc0b50cda92abc1cb5f
-h
-8GeekShopping.ProductAPI/Controllers/ProductController.cs,c\7\c7f54f4a818b979aaa19c6ad9d1de614a96baff0
-g
-7GeekShopping.ProductAPI/Repository/ProductRepository.cs,8\3\83125a58302eb3faff779346d2ee2b31b12189fa
-R
-"GeekShopping.ProductAPI/Program.cs,8\a\8a370adacba9baa44f6bed2627dc2b7986226fb2
